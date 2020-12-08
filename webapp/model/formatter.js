@@ -6,6 +6,8 @@ sap.ui.define([], function () {
 			switch (sStatus) {
 			case "Available":
 				return resourceBundle.getText("Yahoooo");
+			case "Unavailable":
+				return resourceBundle.getText("Uhhhh");
 			default:
 				return sStatus;
 			}
