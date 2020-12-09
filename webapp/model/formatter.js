@@ -2,12 +2,14 @@ sap.ui.define([], function () {
 	"use strict";
 	return {
 		statusText: function (sStatus) {
-			var resourceBundle = this.getView().getModel("i18n").getResourceBundle();
+			var resourceBundle = this.getView()
+				.getModel("i18n")
+				.getResourceBundle();
 			switch (sStatus) {
 			case "Available":
-				return resourceBundle.getText("Yahoooo");
+				return resourceBundle.getText("Available");
 			case "Unavailable":
-				return resourceBundle.getText("Uhhhh");
+				return resourceBundle.getText("Unavailable");
 			default:
 				return sStatus;
 			}

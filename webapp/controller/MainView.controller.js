@@ -9,7 +9,7 @@ sap.ui.define([
 	return Controller.extend("home.kpmg.exercise3.controller.MainView", {
 		formatter: formatter,
 		onInit: function () {
-
+			debugger;
 		},
 		onFilterProducts: function (oEvent) {
 
